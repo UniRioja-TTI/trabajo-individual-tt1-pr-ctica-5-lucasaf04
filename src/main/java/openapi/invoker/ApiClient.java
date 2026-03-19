@@ -81,8 +81,8 @@ public class ApiClient extends JavaTimeFormatter {
     protected String basePath = "http://localhost";
     protected List<ServerConfiguration> servers = new ArrayList<ServerConfiguration>(Arrays.asList(
         new ServerConfiguration(
-            "",
-            "No description provided",
+            "http://192.168.1.122:8080",
+            "PR5 local server",
             new HashMap<String, ServerVariable>()
         )
     ));
