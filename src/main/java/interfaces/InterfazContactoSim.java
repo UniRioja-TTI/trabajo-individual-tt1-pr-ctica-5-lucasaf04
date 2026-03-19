@@ -8,7 +8,7 @@ import modelo.Entidad;
 
 public interface InterfazContactoSim {
 	public int solicitarSimulation(DatosSolicitud sol);
-	public DatosSimulation descargarDatos(int ticket);
+	public DatosSimulation descargarDatos(int tok);
 	public List<Entidad> getEntities();
 	public boolean isValidEntityId(int id);
 }

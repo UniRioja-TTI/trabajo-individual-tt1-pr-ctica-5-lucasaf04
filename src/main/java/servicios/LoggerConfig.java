@@ -7,7 +7,6 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class LoggerConfig {
-
     @Bean
     public Logger simulationLogger() {
         return LoggerFactory.getLogger("Simulation");
