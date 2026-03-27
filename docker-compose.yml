@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  app-spring:
+    image: lucasaf04/trabajo-docker
+    container_name: app-spring
+    ports:
+      - "8080:8080"
+    networks:
+      - backend
+
+  servicio-tt1:
+    image: javillour/servicio-tt1:arm64
+    container_name: servicio-tt1
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge
